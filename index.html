@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-modal.css">
+    <title>Calculo de terremoto</title>
+</head>
+
+<body>
+    <h1>Calcular la fuerza destructiva de un terremoto</h1>
+    <div class="container">
+        <form id="form">
+            <label for="amplitud">Amplitud: </label>
+            <input type="text" name="amplitud" id="amplitud" required="true" placeholder="Ingrese la amplitud">
+            <label for="diferencia">Diferencia: </label>
+            <input type="text" name="diferencia" id="diferencia" required="true" placeholder="Ingrese la diferencia de tiempo">
+        </form>
+        <button class="boton" id="btn" onclick="Calcular()"> Calcular </button>
+        <div class="modal-container">
+            <div class="modal modal-close">
+                <p class="close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </p>
+                <div class="modal-texto">
+                    <h1>Escala de richter</h1>
+                    <h3 id="escala"></h3>
+                </div>
+                <footer id="colors">
+                    <p id="msg"></p>
+                </footer>
+            </div>
+        </div>
+        <script src="js/sismo.js"></script>
+        <script src="js/event.js"></script>
+        <script src="js/modal.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
