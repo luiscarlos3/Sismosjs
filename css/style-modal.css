@@ -30,7 +30,6 @@
         position: absolute;
         top: 5px;
         right: 5px;
-        display: inline-block;
         width: 25px;
         height: 25px;
         background-color: white;
@@ -39,6 +38,12 @@
         cursor: pointer;
         border: 1px solid red;
         border-radius: 100px;
+        transition: 1s;
+    }
+    
+    .close:hover {
+        background-color: red;
+        color: white;
     }
     
     .modal-close {
