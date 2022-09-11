@@ -72,9 +72,84 @@
         font-size: 25px;
     }
     
-    @media only screen and (max-width: 360px) {
+    @media only screen and (max-width: 360px) and (max-width: 760px) {
+        .modal {
+            width: 30%;
+            height: 10%;
+        }
+        .modal-texto {
+            position: absolute;
+            top: 7%;
+            width: 100%;
+            text-align: center;
+            font-size: 15px;
+        }
+        footer>p {
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+    
+    @media only screen and (max-width: 412px) and (max-width: 915px) {
         .modal {
             width: 90%;
             height: 30%;
+        }
+    }
+    
+    @media only screen and (max-width: 810px) {
+        .modal-texto {
+            position: absolute;
+            top: 7%;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+        }
+        footer>p {
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+    
+    @media only screen and (max-width: 414px) {
+        .modal {
+            width: 60%;
+            height: 30%;
+        }
+        .modal-texto {
+            position: absolute;
+            top: 7%;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+        }
+        footer>p {
+            text-align: center;
+            font-size: 17px;
+        }
+    }
+    
+    @media only screen and (max-width: 428px) {
+        .modal {
+            width: 60%;
+            height: 30%;
+        }
+        .modal-texto {
+            position: absolute;
+            top: 7%;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+        }
+        footer>p {
+            text-align: center;
+            font-size: 17px;
+        }
+    }
+    
+    @media only screen and (max-width: 375px) {
+        .modal {
+            width: 60%;
+            height: 40%;
         }
     }
