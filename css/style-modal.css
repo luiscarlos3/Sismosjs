@@ -129,7 +129,7 @@
         }
     }
     
-    @media only screen and (max-width: 428px) {
+    @media only screen and (max-device-width: 428px) {
         .modal {
             width: 60%;
             height: 30%;
@@ -147,9 +147,9 @@
         }
     }
     
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-device-width: 375px) {
         .modal {
-            width: 60%;
-            height: 40%;
+            width: 40%;
+            height: 30%;
         }
     }
